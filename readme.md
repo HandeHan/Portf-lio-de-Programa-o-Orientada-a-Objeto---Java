@@ -15,24 +15,6 @@ A aplicação utiliza banco de dados local SQLite para armazenar informações d
 
 ---
 
-## Estrutura do Projeto
-
-/
-├── README.md
-├── docs/
-│ ├── 01-modelo-conceitual.md
-│ ├── 02-modelo-logico.md
-│ ├── 03-modelo-fisico.md
-│ └── 04-wireframes-admin.pdf
-└── src/
-├── DatabaseHelper.java
-├── User.java
-├── UserDAO.java
-├── LoginScreen.java
-└── RegisterScreen.java
-
----
-
 ## Banco de Dados (SQLite)
 
 A estrutura mínima utilizada no projeto possui somente uma tabela (users), suficiente para autenticação de usuários.
