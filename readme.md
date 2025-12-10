@@ -31,7 +31,6 @@ A aplicação utiliza banco de dados local SQLite para armazenar informações d
 ├── LoginScreen.java
 └── RegisterScreen.java
 
-
 ---
 
 ## Banco de Dados (SQLite)
