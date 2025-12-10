@@ -31,6 +31,57 @@ CREATE TABLE users (
 
 ```
 
++-----------------------+           +---------------------------+
+|       Usuario         |           |         Denuncia          |
++-----------------------+           +---------------------------+
+| - id : int            |           | - id : int                |
+| - nome : String       |           | - usuarioId : int         |
+| - email : String      |           | - descricao : String      |
+| - senha : String      |           | - status : String         |
+| - administrador:bool  |           +---------------------------+
++-----------------------+           | +resolver()               |
+| +getId()              |           +---------------------------+
+| +getNome()            |
+| +getEmail()           |     (Denuncia.usuarioId -> Usuario.id)
+| +isAdministrador()    |
++-----------------------+
+
+       ^                          ^
+       |                          |
+       | contains                 | contains
++-------------------+      +-----------------------+
+| UsuarioRepository |      | DenunciaRepository   |
++-------------------+      +-----------------------+
+| - List<Usuario>   |      | - List<Denuncia>      |
+| - sequence:int    |      | - sequence:int        |
++-------------------+      +-----------------------+
+| +cadastrar(...)   |      | +registrar(...)       |
+| +buscarPorEmail...|      | +listar()             |
++-------------------+      | +buscarPorId(...)     |
+                           +-----------------------+
+
+       ^                          ^
+       | uses                     | uses
++-------------------+      +-----------------------+
+| UsuarioService    |      | DenunciaService       |
++-------------------+      +-----------------------+
+| - repo            |      | - repo                |
++-------------------+      +-----------------------+
+| +cadastrar(...)   |      | +registrar(...)       |
+| +login(...)       |      | +listar()             |
++-------------------+      | +resolver(id)         |
+                           +-----------------------+
+
+                             ^
+                             |
+                       +-------------+
+                       |    Main     |
+                       +-------------+
+                       | +main(...)  |
+                       +-------------+
+                       (interage com services via console)
+
+
 Tecnologias Utilizadas
 
 - Java
