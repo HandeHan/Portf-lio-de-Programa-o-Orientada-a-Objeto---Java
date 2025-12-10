@@ -97,7 +97,7 @@ CREATE TABLE users (
 
 Esta aplicação utiliza Programação Orientada a Objetos para organizar as funcionalidades do lado administrador, permitindo gerenciar usuários e denúncias públicas. A arquitetura foi estruturada em camadas (Model, Repository, Service e App) para facilitar a organização, manutenção e clareza do código.
 
-1. Classe Usuario
+### Classe Usuario
 
 A classe Usuario representa uma pessoa cadastrada no sistema, responsável por realizar ações como autenticação e gestão de denúncias.
 
@@ -112,7 +112,7 @@ Responsabilidade:
 
 Modelar os dados essenciais de um usuário e fornecer acesso seguro a essas informações através de encapsulamento.
 
-2. Classe Denuncia
+### Classe Denuncia
 
 A classe Denuncia representa um problema reportado por um usuário, como iluminação pública, buracos, mobilidade urbana, etc.
 
@@ -130,7 +130,7 @@ Responsabilidade:
 
 Estruturar todas as informações referentes a cada denúncia, mantendo seu estado e permitindo sua evolução no sistema.
 
-3. Camada Repository (Persistência)
+### Camada Repository (Persistência)
 
 Os repositórios simulam um banco de dados utilizando listas internas.
 Servem para armazenar e consultar objetos.
@@ -155,7 +155,7 @@ Responsável por:
 
 Garante o armazenamento de todas as denúncias registradas.
 
-4. Camada Service (Regras de Negócio)
+### Camada Service (Regras de Negócio)
 
 Os services aplicam validações e regras antes de acessar os repositórios.
 
@@ -175,7 +175,7 @@ b) DenunciaService
 - alterar status de denúncias
 - garantir dados consistentes antes de salvar
 
-5. AdminApp (Aplicação Principal)
+### AdminApp (Aplicação Principal)
 
 A classe AdminApp demonstra o funcionamento do sistema do ponto de vista do administrador.
 
@@ -189,7 +189,7 @@ Ela exemplifica:
 
 Serve como simulação prática do fluxo do sistema.
 
-6. Integração das Classes
+### Integração das Classes
 
 O fluxo interno opera da seguinte forma:
 1. A aplicação (AdminApp) solicita operações aos serviços.
@@ -207,7 +207,7 @@ Esse fluxo demonstra:
 
 ---
 
-Tecnologias Utilizadas
+## **Tecnologias Utilizadas**
 
 - Java
 - Android SDK
