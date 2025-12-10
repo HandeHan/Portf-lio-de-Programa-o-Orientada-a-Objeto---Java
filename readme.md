@@ -47,3 +47,13 @@ CREATE TABLE users (
     email TEXT UNIQUE NOT NULL,
     password TEXT NOT NULL
 );
+
+```
+
+Tecnologias Utilizadas
+
+- Java
+- Android SDK
+- SQLite
+- Padrão DAO (Data Access Object)
+- MVC simplificado
