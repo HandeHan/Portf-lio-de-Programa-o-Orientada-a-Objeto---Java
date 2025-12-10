@@ -11,7 +11,7 @@ A aplicação utiliza banco de dados local SQLite para armazenar informações d
 - Cadastro de usuários.
 - Login com validação de e-mail e senha.
 - Estrutura mínima do banco de dados integrada ao SQLite.
-- Organização das camadas de classes (Model, DAO e Database Helper).
+- Organização das camadas de classes (Model, Repository, Service, App).
 
 ---
 
