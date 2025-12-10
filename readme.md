@@ -30,6 +30,8 @@ CREATE TABLE users (
 );
 
 ```
+![Diagrama de Classes](docs/class-diagram.png)
+*Figura: Diagrama de Classes - visão geral das camadas Model / Repository / Service / App*
 
 ```sql
 
