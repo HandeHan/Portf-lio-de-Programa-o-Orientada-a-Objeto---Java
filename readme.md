@@ -33,7 +33,7 @@ CREATE TABLE users (
 
 ---
 
-### Diagrama de Classes
+## Diagrama de Classes
 
 *Figura: Diagrama de Classes - visão geral das camadas Model / Repository / Service / App*
 
