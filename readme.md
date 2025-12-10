@@ -93,6 +93,120 @@ CREATE TABLE users (
 
 ---
 
+## Explicação das Classes do Projeto (Lado Administrador)
+
+Esta aplicação utiliza Programação Orientada a Objetos para organizar as funcionalidades do lado administrador, permitindo gerenciar usuários e denúncias públicas. A arquitetura foi estruturada em camadas (Model, Repository, Service e App) para facilitar a organização, manutenção e clareza do código.
+
+1. Classe Usuario
+
+A classe Usuario representa uma pessoa cadastrada no sistema, responsável por realizar ações como autenticação e gestão de denúncias.
+
+- Atributos principais:
+- id: identificador único do usuário
+- nome: nome completo
+- email: utilizado para login
+- senha: credencial de acesso
+- perfil: tipo de usuário (ADMIN ou USUARIO)
+
+Responsabilidade:
+
+Modelar os dados essenciais de um usuário e fornecer acesso seguro a essas informações através de encapsulamento.
+
+2. Classe Denuncia
+
+A classe Denuncia representa um problema reportado por um usuário, como iluminação pública, buracos, mobilidade urbana, etc.
+
+Atributos principais:
+
+- id
+- titulo
+- descricao
+- categoria
+- status (ABERTA, EM_ANDAMENTO ou FECHADA)
+- dataCriacao
+- usuarioCriador
+
+Responsabilidade:
+
+Estruturar todas as informações referentes a cada denúncia, mantendo seu estado e permitindo sua evolução no sistema.
+
+3. Camada Repository (Persistência)
+
+Os repositórios simulam um banco de dados utilizando listas internas.
+Servem para armazenar e consultar objetos.
+
+a) UsuarioRepository
+
+Responsável por:
+
+- salvar usuários
+- buscar por e-mail
+- listar todos os usuários
+- É utilizado para autenticação e cadastro.
+
+b) DenunciaRepository
+
+Responsável por:
+
+- salvar denúncias
+- listar todas
+- filtrar por status
+- buscar por categoria
+
+Garante o armazenamento de todas as denúncias registradas.
+
+4. Camada Service (Regras de Negócio)
+
+Os services aplicam validações e regras antes de acessar os repositórios.
+
+a) UsuarioService
+
+- Funções principais:
+- validar e-mail duplicado
+- registrar usuários
+- autenticar login
+- definir perfil (ADMIN ou USUARIO)
+
+b) DenunciaService
+
+- Funções principais:
+- criar denúncias corretamente
+- validar categorias
+- alterar status de denúncias
+- garantir dados consistentes antes de salvar
+
+5. AdminApp (Aplicação Principal)
+
+A classe AdminApp demonstra o funcionamento do sistema do ponto de vista do administrador.
+
+Ela exemplifica:
+
+- cadastro de usuários
+- cadastro de categorias
+- registro de denúncias
+- listagem de denúncias
+- visualização por status
+
+Serve como simulação prática do fluxo do sistema.
+
+6. Integração das Classes
+
+O fluxo interno opera da seguinte forma:
+1. A aplicação (AdminApp) solicita operações aos serviços.
+2. Os serviços aplicam validações e regras de negócio.
+3. Após validadas, as informações são enviadas aos repositórios.
+4. Os repositórios armazenam objetos Usuario e Denuncia.
+5. As entidades representam os dados e comportamentos do sistema.
+
+Esse fluxo demonstra:
+
+- encapsulamento
+- separação de responsabilidades
+- organização por camadas
+- uso eficiente dos pilares da Programação Orientada a Objetos
+
+---
+
 Tecnologias Utilizadas
 
 - Java
