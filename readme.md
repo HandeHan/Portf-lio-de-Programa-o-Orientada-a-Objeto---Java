@@ -207,7 +207,7 @@ Esse fluxo demonstra:
 
 ---
 
-## **Tecnologias Utilizadas**
+### **Tecnologias Utilizadas**
 
 - Java
 - Android SDK
