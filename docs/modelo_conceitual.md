@@ -1,0 +1,5 @@
+[ Usuário ]
+   |
+   |-- nome
+   |-- email
+   |-- senha
