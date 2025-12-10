@@ -30,7 +30,11 @@ CREATE TABLE users (
 );
 
 ```
-![Diagrama de Classes](docs/class-diagram.png)
+
+---
+
+### Diagrama de Classes
+
 *Figura: Diagrama de Classes - visão geral das camadas Model / Repository / Service / App*
 
 ```sql
@@ -86,6 +90,8 @@ CREATE TABLE users (
                        (interage com services via console)
 
 ```
+
+---
 
 Tecnologias Utilizadas
 
