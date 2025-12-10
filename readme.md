@@ -35,7 +35,7 @@ CREATE TABLE users (
 
 ## Diagrama de Classes
 
-*Figura: Diagrama de Classes - visão geral das camadas Model / Repository / Service / App*
+*Figura: Diagrama de Classes com ASCCI - visão geral das camadas Model / Repository / Service / App*
 
 ```sql
 
