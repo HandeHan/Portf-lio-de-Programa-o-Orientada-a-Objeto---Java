@@ -207,6 +207,35 @@ Esse fluxo demonstra:
 
 ---
 
+## Estrutura do Banco de Dados (SQLite)
+
+O projeto utiliza SQLite como armazenamento local.
+Como a proposta da aplicação é demonstrar somente a parte administrativa mínima, foi implementada apenas a tabela responsável pelo gerenciamento de usuários, suficiente para autenticação no sistema.
+
+Tabela implementada: users
+
+Campos:
+
+- id – identificador único (chave primária)
+- name – nome completo
+- email – e-mail exclusivo do usuário
+- password – senha de acesso
+
+Script SQL:
+
+```sql
+
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    email TEXT UNIQUE NOT NULL,
+    password TEXT NOT NULL
+);
+
+```
+
+---
+
 ### **Tecnologias Utilizadas**
 
 - Java
