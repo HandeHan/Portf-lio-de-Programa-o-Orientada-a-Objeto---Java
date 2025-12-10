@@ -31,6 +31,8 @@ CREATE TABLE users (
 
 ```
 
+```sql
+
 +-----------------------+           +---------------------------+
 |       Usuario         |           |         Denuncia          |
 +-----------------------+           +---------------------------+
@@ -81,6 +83,7 @@ CREATE TABLE users (
                        +-------------+
                        (interage com services via console)
 
+```
 
 Tecnologias Utilizadas
 
