@@ -214,3 +214,7 @@ Esse fluxo demonstra:
 - SQLite
 - Padrão DAO (Data Access Object)
 - MVC simplificado
+
+### Conclusão Pessoal:
+
+A construção do diagrama de classes me ajudou a entender melhor como cada parte do sistema se conecta e qual é a responsabilidade de cada componente. Mesmo sendo um modelo inicial, ele facilitou a visualização da estrutura e tornou mais claro o que ainda precisa ser desenvolvido ou ajustado. Esse processo contribuiu para minha organização e para a compreensão do projeto como um todo, mas ainda enfrentei alguns problemas em relação java pois não o compreendia completamente.
